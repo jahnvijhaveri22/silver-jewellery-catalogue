@@ -9,9 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#171019; --ink2:#1f1526; --velvet:#271a30; --panel:#2c1e37;
+  --ink:#0c1712; --ink2:#122019; --velvet:#16281f; --panel:#1a2f24;
   --gold:#cBa24d; --gold-hi:#eBd08f; --gold-dim:#8f7a45;
-  --ivory:#f7f2ea; --paper:#ffffff; --mute:#b3a6bf; --line:rgba(203,162,77,.22);
+  --ivory:#f2f5ef; --paper:#ffffff; --mute:#a6b3ab; --line:rgba(203,162,77,.22);
   --pearl:#c3c9d4; --topaz:#e0a53f; --emerald:#35a578; --solitaire:#9db8ff;
 }
 *{box-sizing:border-box}
@@ -19,9 +19,9 @@ html{scroll-behavior:smooth}
 body{
   margin:0; color:var(--ivory); font-family:"Jost",sans-serif; font-weight:300;
   background:
-    radial-gradient(1100px 620px at 50% -6%, #3a2745 0%, rgba(58,39,69,0) 60%),
-    radial-gradient(900px 700px at 100% 0%, rgba(120,70,150,.18), rgba(0,0,0,0) 55%),
-    linear-gradient(180deg,#1b1220 0%, #171019 40%, #140d1a 100%);
+    radial-gradient(1100px 620px at 50% -6%, #23402f 0%, rgba(35,64,47,0) 60%),
+    radial-gradient(900px 700px at 100% 0%, rgba(80,140,105,.16), rgba(0,0,0,0) 55%),
+    linear-gradient(180deg,#0f1b15 0%, #0c1712 40%, #0a130f 100%);
   background-attachment:fixed;
   -webkit-font-smoothing:antialiased;
 }
@@ -63,7 +63,7 @@ body{
 
 /* ---------- CONTROLS ---------- */
 .controls{position:sticky;top:0;z-index:40;margin-top:24px;
-  background:linear-gradient(180deg,rgba(23,16,25,.96),rgba(23,16,25,.82));
+  background:linear-gradient(180deg,rgba(12,23,18,.96),rgba(12,23,18,.82));
   backdrop-filter:blur(9px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .controls .inner{max-width:1280px;margin:0 auto;padding:12px 22px;display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center}
 .grp{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
@@ -96,7 +96,7 @@ body{
 .facet{position:absolute;top:0;right:0;width:0;height:0;border-style:solid;
   border-width:0 42px 42px 0;border-color:transparent var(--tier) transparent transparent;opacity:.92}
 .gembadge{position:absolute;top:9px;left:9px;display:flex;align-items:center;gap:6px;
-  background:rgba(20,13,20,.6);backdrop-filter:blur(3px);border:1px solid rgba(255,255,255,.14);
+  background:rgba(10,19,15,.6);backdrop-filter:blur(3px);border:1px solid rgba(255,255,255,.14);
   padding:4px 9px 4px 6px;border-radius:30px}
 .gembadge span{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#fff;font-weight:400}
 /* light sweep */
@@ -125,7 +125,7 @@ body{
 /* ---------- VITRINE TRAY ---------- */
 .tray{position:fixed;left:0;right:0;bottom:0;z-index:60;transform:translateY(110%);transition:transform .34s cubic-bezier(.2,.7,.2,1)}
 .tray.show{transform:none}
-.traybar{max-width:1280px;margin:0 auto;background:linear-gradient(180deg,#2a1c34,#201528);
+.traybar{max-width:1280px;margin:0 auto;background:linear-gradient(180deg,#1c3226,#15251d);
   border:1px solid var(--line);border-bottom:0;border-radius:16px 16px 0 0;
   box-shadow:0 -18px 50px -20px rgba(0,0,0,.7);padding:14px 20px;display:flex;align-items:center;gap:18px;cursor:pointer}
 .traybar .tl{display:flex;align-items:center;gap:12px}
@@ -136,7 +136,7 @@ body{
 .traybar .tot .cur{font-size:16px;color:var(--gold)}
 .traybar .chev{transition:.3s;color:var(--gold)}
 .tray.open .chev{transform:rotate(180deg)}
-.traypanel{max-width:1280px;margin:0 auto;background:#1c1326;border-left:1px solid var(--line);border-right:1px solid var(--line);
+.traypanel{max-width:1280px;margin:0 auto;background:#122019;border-left:1px solid var(--line);border-right:1px solid var(--line);
   max-height:0;overflow:hidden;transition:max-height .34s ease}
 .tray.open .traypanel{max-height:46vh;overflow:auto}
 .tlist{padding:8px 14px 16px}
